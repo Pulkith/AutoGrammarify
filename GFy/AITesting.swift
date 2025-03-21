@@ -10,7 +10,7 @@ struct Testing {
             return
         }
         
-//        model.streamResponse(prompt: "Wassup cute", onToken: { token in
+//        model.streamResponse(prompt: "Hey!", onToken: { token in
 //            print("TOKEN: \(token)")
 //            fflush(stdout)
 //        }, onComplete: { response in
@@ -21,7 +21,7 @@ struct Testing {
 //            CFRunLoopStop(CFRunLoopGetCurrent())
 //        })
         
-        model.generateResponse(prompt: "Wassup Cutie") { result in
+        model.generateResponse(prompt: "Hey!") { result in
             switch result {
             case .success(let responseText):
                 print("RESPONSE TEXT: \(responseText)")
