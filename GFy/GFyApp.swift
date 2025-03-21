@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GFyApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        // Although we won’t show this window, we still need a settings scene.
+        Settings {
+            Text("Settings or main app window")
         }
     }
 }
