@@ -11,3 +11,8 @@ A background macOS app that can fix the grammar, syntax, punctuation, semantics,
 ## Requires
 - Accepting (or adding) Accessibility Permissions in Settings
 - Ollama with Gemma3:1b installed (on default port)
+
+## Testing Playground
+Command:s
+`❯❯❯ swiftc -parse-as-library AITesting.swift Inference.swift AI.swift`
+`❯❯❯ ./main`
